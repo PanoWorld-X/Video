@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PanoWorld-X Rebuttal Material</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0f0f0f;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px 30px;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            border-bottom: 2px solid #0f3460;
+        }
+        header h1 {
+            font-size: 2.4rem;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+        header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            color: #a0a0a0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .section {
+            margin-bottom: 60px;
+        }
+        .section h2 {
+            font-size: 1.6rem;
+            color: #e94560;
+            margin-bottom: 10px;
+            border-left: 4px solid #e94560;
+            padding-left: 12px;
+        }
+        .section p.desc {
+            color: #999;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 24px;
+        }
+        .video-card {
+            background: #1a1a2e;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #2a2a4a;
+            transition: transform 0.2s;
+        }
+        .video-card:hover {
+            transform: translateY(-3px);
+        }
+        .video-card video {
+            width: 100%;
+            display: block;
+            background: #000;
+        }
+        .video-card .caption {
+            padding: 12px 16px;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #555;
+            font-size: 0.85rem;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>PanoWorld-X Rebuttal Material</h1>
+    <p>Supplementary Videos for Reviewer Questions</p>
+</header>
+
+<div class="container">
+
+    <!-- ============================================================ -->
+    <!-- Section 1: Real-World Generalization -->
+    <!-- ============================================================ -->
+    <div class="section">
+        <h2>1. Real-World Generalization</h2>
+        <p class="desc">Results on real-world panoramic images (WEB360 + self-collected).</p>
+        <div class="video-grid">
+
+            <div class="video-card">
+                <video controls muted loop preload="metadata">
+                    <source src="videos/real_world_1.mp4" type="video/mp4">
+                </video>
+                <div class="caption">Real-World Scene 1</div>
+            </div>
+
+            <div class="video-card">
+                <video controls muted loop preload="metadata">
+                    <source src="videos/real_world_2.mp4" type="video/mp4">
+                </video>
+                <div class="caption">Real-World Scene 2</div>
+            </div>
+
+            <div class="video-card">
+                <video controls muted loop preload="metadata">
+                    <source src="videos/real_world_3.mp4" type="video/mp4">
+                </video>
+                <div class="caption">Real-World Scene 3</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- Section 2: Dynamic Scenes -->
+    <!-- ============================================================ -->
+    <div class="section">
+        <h2>2. Dynamic Scenes</h2>
+        <p class="desc">Generalization to scenes with dynamic objects (vehicles, etc.).</p>
+        <div class="video-grid">
+
+            <div class="video-card">
+                <video controls muted loop preload="metadata">
+                    <source src="videos/dynamic_1.mp4" type="video/mp4">
+                </video>
+                <div class="caption">Dynamic Scene 1</div>
+            </div>
+
+            <div class="video-card">
+                <video controls muted loop preload="metadata">
+                    <source src="videos/dynamic_2.mp4" type="video/mp4">
+                </video>
+                <div class="caption">Dynamic Scene 2</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- Section 3: Diverse Trajectory Types -->
+    <!-- ============================================================ -->
+    <div class="section">
+        <h2>3. Diverse Trajectory Types</h2>
+        <p class="desc">Scene consistency under varying camera trajectories.</p>
+        <div class="video-grid">
+
+            <div class="video-card">
+                <video controls muted loop preload="metadata">
+                    <source src="videos/traj_straight.mp4" type="video/mp4">
+                </video>
+                <div class="caption">Straight Forward</div>
+            </div>
+
+            <div class="video-card">
+                <video controls muted loop preload="metadata">
+                    <source src="videos/traj_left.mp4" type="video/mp4">
+                </video>
+                <div class="caption">Turn Left</div>
+            </div>
+
+            <div class="video-card">
+                <video controls muted loop preload="metadata">
+                    <source src="videos/traj_right.mp4" type="video/mp4">
+                </video>
+                <div class="caption">Turn Right</div>
+            </div>
+
+            <div class="video-card">
+                <video controls muted loop preload="metadata">
+                    <source src="videos/traj_s_curve.mp4" type="video/mp4">
+                </video>
+                <div class="caption">S-Curve</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- Section 4: Ablation - Sphere-Aware Attention -->
+    <!-- ============================================================ -->
+    <div class="section">
+        <h2>4. Ablation: Sphere-Aware Attention</h2>
+        <p class="desc">Left-right boundary continuity comparison.</p>
+        <div class="video-grid">
+
+            <div class="video-card">
+                <video controls muted loop preload="metadata">
+                    <source src="videos/ablation_wo_sphere_attn.mp4" type="video/mp4">
+                </video>
+                <div class="caption">w/o Sphere-Aware Attention</div>
+            </div>
+
+            <div class="video-card">
+                <video controls muted loop preload="metadata">
+                    <source src="videos/ablation_w_sphere_attn.mp4" type="video/mp4">
+                </video>
+                <div class="caption">w/ Sphere-Aware Attention (Ours)</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- Section 5: Video Super-Resolution -->
+    <!-- ============================================================ -->
+    <div class="section">
+        <h2>5. Video Super-Resolution</h2>
+        <p class="desc">Post-processing upscaled results for higher visual quality.</p>
+        <div class="video-grid">
+
+            <div class="video-card">
+                <video controls muted loop preload="metadata">
+                    <source src="videos/sr_before.mp4" type="video/mp4">
+                </video>
+                <div class="caption">Before Super-Resolution</div>
+            </div>
+
+            <div class="video-card">
+                <video controls muted loop preload="metadata">
+                    <source src="videos/sr_after.mp4" type="video/mp4">
+                </video>
+                <div class="caption">After Super-Resolution</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- Section 6: Long Sequence (Autoregressive) -->
+    <!-- ============================================================ -->
+    <div class="section">
+        <h2>6. Long Sequence Generation</h2>
+        <p class="desc">Autoregressive extrapolation for 15–20 second continuous sequences.</p>
+        <div class="video-grid">
+
+            <div class="video-card">
+                <video controls muted loop preload="metadata">
+                    <source src="videos/long_seq_1.mp4" type="video/mp4">
+                </video>
+                <div class="caption">Long Sequence 1</div>
+            </div>
+
+            <div class="video-card">
+                <video controls muted loop preload="metadata">
+                    <source src="videos/long_seq_2.mp4" type="video/mp4">
+                </video>
+                <div class="caption">Long Sequence 2</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- Section 7: Comparison with Baselines -->
+    <!-- ============================================================ -->
+    <div class="section">
+        <h2>7. Comparison with Baselines</h2>
+        <p class="desc">Visual comparison against 360DVD, Imagine360, GenEX.</p>
+        <div class="video-grid">
+
+            <div class="video-card">
+                <video controls muted loop preload="metadata">
+                    <source src="videos/cmp_360dvd.mp4" type="video/mp4">
+                </video>
+                <div class="caption">360DVD</div>
+            </div>
+
+            <div class="video-card">
+                <video controls muted loop preload="metadata">
+                    <source src="videos/cmp_imagine360.mp4" type="video/mp4">
+                </video>
+                <div class="caption">Imagine360</div>
+            </div>
+
+            <div class="video-card">
+                <video controls muted loop preload="metadata">
+                    <source src="videos/cmp_genex.mp4" type="video/mp4">
+                </video>
+                <div class="caption">GenEX</div>
+            </div>
+
+            <div class="video-card">
+                <video controls muted loop preload="metadata">
+                    <source src="videos/cmp_ours.mp4" type="video/mp4">
+                </video>
+                <div class="caption">Ours</div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    PanoWorld-X &mdash; Anonymous Submission #19585
+</footer>
+
+</body>
+</html>
