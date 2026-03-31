@@ -34,12 +34,20 @@
 
         .section {
             margin-bottom: 48px;
+            padding-top: 32px;
+            border-top: 2px solid #ddd;
+        }
+
+        .section:first-child {
+            border-top: none;
+            padding-top: 0;
         }
 
         .section h2 {
-            font-size: 1.6rem;
-            color: #222;
-            margin-bottom: 24px;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 28px;
             text-align: center;
         }
 
@@ -82,7 +90,7 @@
         }
 
         .quality-group {
-            margin-bottom: 32px;
+            margin-bottom: 40px;
         }
 
         .quality-group h3 {
@@ -90,6 +98,16 @@
             color: #444;
             margin-bottom: 12px;
             text-align: center;
+        }
+
+        .pano-center {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+
+        .pano-center .video-card {
+            width: 33.33%;
         }
 
         @media (max-width: 900px) {
@@ -285,7 +303,7 @@
 
             <div class="quality-group">
                 <h3>Scene 1</h3>
-                <div class="video-grid-3col">
+                <div class="pano-center">
                     <div class="video-card">
                         <video controls muted loop playsinline preload="auto" controlsList="nodownload"
                             oncontextmenu="return false">
@@ -293,6 +311,8 @@
                         </video>
                         <div class="caption">Panorama</div>
                     </div>
+                </div>
+                <div class="video-grid-3col">
                     <div class="video-card">
                         <video controls muted loop playsinline preload="auto" controlsList="nodownload"
                             oncontextmenu="return false">
@@ -319,7 +339,7 @@
 
             <div class="quality-group">
                 <h3>Scene 2</h3>
-                <div class="video-grid-3col">
+                <div class="pano-center">
                     <div class="video-card">
                         <video controls muted loop playsinline preload="auto" controlsList="nodownload"
                             oncontextmenu="return false">
@@ -327,6 +347,8 @@
                         </video>
                         <div class="caption">Panorama</div>
                     </div>
+                </div>
+                <div class="video-grid-3col">
                     <div class="video-card">
                         <video controls muted loop playsinline preload="auto" controlsList="nodownload"
                             oncontextmenu="return false">
@@ -353,7 +375,7 @@
 
             <div class="quality-group">
                 <h3>Scene 3</h3>
-                <div class="video-grid-3col">
+                <div class="pano-center">
                     <div class="video-card">
                         <video controls muted loop playsinline preload="auto" controlsList="nodownload"
                             oncontextmenu="return false">
@@ -361,6 +383,8 @@
                         </video>
                         <div class="caption">Panorama</div>
                     </div>
+                </div>
+                <div class="video-grid-3col">
                     <div class="video-card">
                         <video controls muted loop playsinline preload="auto" controlsList="nodownload"
                             oncontextmenu="return false">
@@ -387,7 +411,7 @@
 
             <div class="quality-group">
                 <h3>Scene 4</h3>
-                <div class="video-grid-3col">
+                <div class="pano-center">
                     <div class="video-card">
                         <video controls muted loop playsinline preload="auto" controlsList="nodownload"
                             oncontextmenu="return false">
@@ -395,6 +419,8 @@
                         </video>
                         <div class="caption">Panorama</div>
                     </div>
+                </div>
+                <div class="video-grid-3col">
                     <div class="video-card">
                         <video controls muted loop playsinline preload="auto" controlsList="nodownload"
                             oncontextmenu="return false">
