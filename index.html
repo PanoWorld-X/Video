@@ -49,6 +49,12 @@
             gap: 20px;
         }
 
+        .video-grid-3col {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
         .video-card {
             background: #f9f9f9;
             border-radius: 8px;
@@ -75,8 +81,29 @@
             text-align: center;
         }
 
+        .quality-group {
+            margin-bottom: 32px;
+        }
+
+        .quality-group h3 {
+            font-size: 1.1rem;
+            color: #444;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        @media (max-width: 900px) {
+            .video-grid-3col {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
         @media (max-width: 500px) {
             .video-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .video-grid-3col {
                 grid-template-columns: 1fr;
             }
         }
@@ -89,7 +116,7 @@
 
         <h1>PanoWorld-X Rebuttal</h1>
 
-        <!-- Matterport3D Section -->
+        <!-- Section 1: Matterport3D -->
         <div class="section">
             <h2>Matterport3D-datasets-in-the-wild-I2V-results</h2>
             <div class="video-grid">
@@ -145,7 +172,78 @@
             </div>
         </div>
 
-        <!-- Long Video Section -->
+        <!-- Section 2: Self-collected in the wild results -->
+        <div class="section">
+            <h2>Self-collected in the wild results</h2>
+            <div class="video-grid">
+
+                <div class="video-card">
+                    <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                        oncontextmenu="return false">
+                        <source src="videos/wild-case/pano_video.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="video-card">
+                    <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                        oncontextmenu="return false">
+                        <source src="videos/wild-case/pano_video2.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="video-card">
+                    <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                        oncontextmenu="return false">
+                        <source src="videos/wild-case/pano_video3.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="video-card">
+                    <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                        oncontextmenu="return false">
+                        <source src="videos/wild-case/pano_video4.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="video-card">
+                    <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                        oncontextmenu="return false">
+                        <source src="videos/wild-case/pano_video7.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="video-card">
+                    <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                        oncontextmenu="return false">
+                        <source src="videos/wild-case/pano_video10.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="video-card">
+                    <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                        oncontextmenu="return false">
+                        <source src="videos/wild-case/pano_video11.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="video-card">
+                    <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                        oncontextmenu="return false">
+                        <source src="videos/wild-case/pano_video12.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="video-card">
+                    <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                        oncontextmenu="return false">
+                        <source src="videos/wild-case/pano_video13.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Section 3: Long Video Results -->
         <div class="section">
             <h2>Long Video Results</h2>
             <div class="video-grid">
@@ -179,6 +277,148 @@
                 </div>
 
             </div>
+        </div>
+
+        <!-- Section 4: Ground & Sky Quality -->
+        <div class="section">
+            <h2>Ground & Sky Quality</h2>
+
+            <div class="quality-group">
+                <h3>Scene 1</h3>
+                <div class="video-grid-3col">
+                    <div class="video-card">
+                        <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                            oncontextmenu="return false">
+                            <source src="videos/wild-case/pano_video1.mp4" type="video/mp4">
+                        </video>
+                        <div class="caption">Panorama</div>
+                    </div>
+                    <div class="video-card">
+                        <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                            oncontextmenu="return false">
+                            <source src="videos/cubemap_faces/pano_video1_front.mp4" type="video/mp4">
+                        </video>
+                        <div class="caption">Front</div>
+                    </div>
+                    <div class="video-card">
+                        <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                            oncontextmenu="return false">
+                            <source src="videos/cubemap_faces/pano_video1_bottom.mp4" type="video/mp4">
+                        </video>
+                        <div class="caption">Bottom (Ground)</div>
+                    </div>
+                    <div class="video-card">
+                        <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                            oncontextmenu="return false">
+                            <source src="videos/cubemap_faces/pano_video1_top.mp4" type="video/mp4">
+                        </video>
+                        <div class="caption">Top (Sky)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quality-group">
+                <h3>Scene 2</h3>
+                <div class="video-grid-3col">
+                    <div class="video-card">
+                        <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                            oncontextmenu="return false">
+                            <source src="videos/wild-case/pano_video5.mp4" type="video/mp4">
+                        </video>
+                        <div class="caption">Panorama</div>
+                    </div>
+                    <div class="video-card">
+                        <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                            oncontextmenu="return false">
+                            <source src="videos/cubemap_faces/pano_video5_front.mp4" type="video/mp4">
+                        </video>
+                        <div class="caption">Front</div>
+                    </div>
+                    <div class="video-card">
+                        <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                            oncontextmenu="return false">
+                            <source src="videos/cubemap_faces/pano_video5_bottom.mp4" type="video/mp4">
+                        </video>
+                        <div class="caption">Bottom (Ground)</div>
+                    </div>
+                    <div class="video-card">
+                        <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                            oncontextmenu="return false">
+                            <source src="videos/cubemap_faces/pano_video5_top.mp4" type="video/mp4">
+                        </video>
+                        <div class="caption">Top (Sky)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quality-group">
+                <h3>Scene 3</h3>
+                <div class="video-grid-3col">
+                    <div class="video-card">
+                        <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                            oncontextmenu="return false">
+                            <source src="videos/wild-case/pano_video8.mp4" type="video/mp4">
+                        </video>
+                        <div class="caption">Panorama</div>
+                    </div>
+                    <div class="video-card">
+                        <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                            oncontextmenu="return false">
+                            <source src="videos/cubemap_faces/pano_video8_front.mp4" type="video/mp4">
+                        </video>
+                        <div class="caption">Front</div>
+                    </div>
+                    <div class="video-card">
+                        <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                            oncontextmenu="return false">
+                            <source src="videos/cubemap_faces/pano_video8_bottom.mp4" type="video/mp4">
+                        </video>
+                        <div class="caption">Bottom (Ground)</div>
+                    </div>
+                    <div class="video-card">
+                        <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                            oncontextmenu="return false">
+                            <source src="videos/cubemap_faces/pano_video8_top.mp4" type="video/mp4">
+                        </video>
+                        <div class="caption">Top (Sky)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quality-group">
+                <h3>Scene 4</h3>
+                <div class="video-grid-3col">
+                    <div class="video-card">
+                        <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                            oncontextmenu="return false">
+                            <source src="videos/wild-case/pano_video9.mp4" type="video/mp4">
+                        </video>
+                        <div class="caption">Panorama</div>
+                    </div>
+                    <div class="video-card">
+                        <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                            oncontextmenu="return false">
+                            <source src="videos/cubemap_faces/pano_video9_front.mp4" type="video/mp4">
+                        </video>
+                        <div class="caption">Front</div>
+                    </div>
+                    <div class="video-card">
+                        <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                            oncontextmenu="return false">
+                            <source src="videos/cubemap_faces/pano_video9_bottom.mp4" type="video/mp4">
+                        </video>
+                        <div class="caption">Bottom (Ground)</div>
+                    </div>
+                    <div class="video-card">
+                        <video controls muted loop playsinline preload="auto" controlsList="nodownload"
+                            oncontextmenu="return false">
+                            <source src="videos/cubemap_faces/pano_video9_top.mp4" type="video/mp4">
+                        </video>
+                        <div class="caption">Top (Sky)</div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div>
