@@ -63,6 +63,12 @@
             gap: 20px;
         }
 
+        .video-grid-1col {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
         .video-card {
             background: #f9f9f9;
             border-radius: 8px;
@@ -304,7 +310,36 @@
             </div>
         </div>
 
-        <!-- Section 4: Motion Results -->
+        <!-- Section 4: Video Super Resolution -->
+        <div class="section">
+            <h2>Video Super Resolution (3K)</h2>
+            <div class="video-grid-1col">
+
+                <div class="video-card">
+                    <video controls autoplay muted loop playsinline preload="auto" controlsList="nodownload"
+                        oncontextmenu="return false">
+                        <source src="videos/sup3/Asiantown_ZYh_19_traj124_240frames.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="video-card">
+                    <video controls autoplay muted loop playsinline preload="auto" controlsList="nodownload"
+                        oncontextmenu="return false">
+                        <source src="videos/sup3/IndustrialArea_yzy_27_traj40_120frames.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="video-card">
+                    <video controls autoplay muted loop playsinline preload="auto" controlsList="nodownload"
+                        oncontextmenu="return false">
+                        <source src="videos/sup3/Lordenfel_jl_17_traj18_480frames.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Section 5: Motion Results -->
         <div class="section">
             <h2>Dynamic Scene Results</h2>
             <div class="video-grid">
