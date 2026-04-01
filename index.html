@@ -128,13 +128,10 @@
             width: 50%;
         }
 
-        .video-grid-4col .video-card {
-            aspect-ratio: 1 / 1;
-        }
-
         .video-grid-4col .video-card video {
-            height: 100%;
-            object-fit: cover;
+            width: 100%;
+            display: block;
+            background: #000;
         }
 
         @media (max-width: 900px) {
@@ -388,7 +385,7 @@
 
             <div class="quality-group">
                 <h3>Scene 1</h3>
-                <div class="video-grid-4col">
+                <div class="pano-center">
                     <div class="video-card">
                         <video controls autoplay muted loop playsinline preload="auto" controlsList="nodownload"
                             oncontextmenu="return false">
@@ -396,12 +393,21 @@
                         </video>
                         <div class="caption">Panorama</div>
                     </div>
+                </div>
+                <div class="video-grid-4col">
                     <div class="video-card">
                         <video controls autoplay muted loop playsinline preload="auto" controlsList="nodownload"
                             oncontextmenu="return false">
                             <source src="videos/cubemap_faces/pano_video1_front.mp4" type="video/mp4">
                         </video>
                         <div class="caption">Front</div>
+                    </div>
+                    <div class="video-card">
+                        <video controls autoplay muted loop playsinline preload="auto" controlsList="nodownload"
+                            oncontextmenu="return false">
+                            <source src="videos/cubemap_faces/pano_video1_right.mp4" type="video/mp4">
+                        </video>
+                        <div class="caption">Right</div>
                     </div>
                     <div class="video-card">
                         <video controls autoplay muted loop playsinline preload="auto" controlsList="nodownload"
@@ -422,7 +428,7 @@
 
             <div class="quality-group">
                 <h3>Scene 2</h3>
-                <div class="video-grid-4col">
+                <div class="pano-center">
                     <div class="video-card">
                         <video controls autoplay muted loop playsinline preload="auto" controlsList="nodownload"
                             oncontextmenu="return false">
@@ -430,12 +436,21 @@
                         </video>
                         <div class="caption">Panorama</div>
                     </div>
+                </div>
+                <div class="video-grid-4col">
                     <div class="video-card">
                         <video controls autoplay muted loop playsinline preload="auto" controlsList="nodownload"
                             oncontextmenu="return false">
                             <source src="videos/cubemap_faces/pano_video5_front.mp4" type="video/mp4">
                         </video>
                         <div class="caption">Front</div>
+                    </div>
+                    <div class="video-card">
+                        <video controls autoplay muted loop playsinline preload="auto" controlsList="nodownload"
+                            oncontextmenu="return false">
+                            <source src="videos/cubemap_faces/pano_video5_right.mp4" type="video/mp4">
+                        </video>
+                        <div class="caption">Right</div>
                     </div>
                     <div class="video-card">
                         <video controls autoplay muted loop playsinline preload="auto" controlsList="nodownload"
@@ -456,7 +471,7 @@
 
             <div class="quality-group">
                 <h3>Scene 3</h3>
-                <div class="video-grid-4col">
+                <div class="pano-center">
                     <div class="video-card">
                         <video controls autoplay muted loop playsinline preload="auto" controlsList="nodownload"
                             oncontextmenu="return false">
@@ -464,12 +479,21 @@
                         </video>
                         <div class="caption">Panorama</div>
                     </div>
+                </div>
+                <div class="video-grid-4col">
                     <div class="video-card">
                         <video controls autoplay muted loop playsinline preload="auto" controlsList="nodownload"
                             oncontextmenu="return false">
                             <source src="videos/cubemap_faces/pano_video8_front.mp4" type="video/mp4">
                         </video>
                         <div class="caption">Front</div>
+                    </div>
+                    <div class="video-card">
+                        <video controls autoplay muted loop playsinline preload="auto" controlsList="nodownload"
+                            oncontextmenu="return false">
+                            <source src="videos/cubemap_faces/pano_video8_right.mp4" type="video/mp4">
+                        </video>
+                        <div class="caption">Right</div>
                     </div>
                     <div class="video-card">
                         <video controls autoplay muted loop playsinline preload="auto" controlsList="nodownload"
@@ -490,7 +514,7 @@
 
             <div class="quality-group">
                 <h3>Scene 4</h3>
-                <div class="video-grid-4col">
+                <div class="pano-center">
                     <div class="video-card">
                         <video controls autoplay muted loop playsinline preload="auto" controlsList="nodownload"
                             oncontextmenu="return false">
@@ -498,12 +522,21 @@
                         </video>
                         <div class="caption">Panorama</div>
                     </div>
+                </div>
+                <div class="video-grid-4col">
                     <div class="video-card">
                         <video controls autoplay muted loop playsinline preload="auto" controlsList="nodownload"
                             oncontextmenu="return false">
                             <source src="videos/cubemap_faces/pano_video9_front.mp4" type="video/mp4">
                         </video>
                         <div class="caption">Front</div>
+                    </div>
+                    <div class="video-card">
+                        <video controls autoplay muted loop playsinline preload="auto" controlsList="nodownload"
+                            oncontextmenu="return false">
+                            <source src="videos/cubemap_faces/pano_video9_right.mp4" type="video/mp4">
+                        </video>
+                        <div class="caption">Right</div>
                     </div>
                     <div class="video-card">
                         <video controls autoplay muted loop playsinline preload="auto" controlsList="nodownload"
